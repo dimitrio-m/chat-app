@@ -1,0 +1,32 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "A simple web chat application using socket.IO and Express.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "chat",
+    "communication",
+    "express",
+    "socket.IO",
+    "socket"
+  ],
+  "author": "Dimitrio Mandamadiotis",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4",
+    "socket.io": "^1.4.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitrio-m/chat-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dimitrio-m/chat-app/issues"
+  },
+  "homepage": "https://github.com/dimitrio-m/chat-app#readme"
+}
