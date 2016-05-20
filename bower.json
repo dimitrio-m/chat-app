@@ -1,0 +1,29 @@
+{
+  "name": "chat-app",
+  "description": "A simple web chat application using socket.IO and Express.js",
+  "main": "server.js",
+  "authors": [
+    "Dimitrio Mandamadiotis"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "chat",
+    "communication",
+    "express",
+    "socket.IO",
+    "socket"
+  ],
+  "homepage": "https://github.com/dimitrio-m/chat-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.1.3",
+    "jquery": "^2.2.3",
+    "material-design-icons": "^2.2.3"
+  }
+}

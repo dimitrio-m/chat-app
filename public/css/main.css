@@ -1,6 +1,11 @@
 
+body {
+  overflow-x: hidden;
+}
+
 .panel {
   margin-top: 1em;
+  min-height: 90%;
 }
 
 #messages {
@@ -10,4 +15,45 @@
 
 #messages li {
   padding: 5px 10px;
+}
+
+.panel-default {
+  display: flex;
+}
+
+.Form {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: 240px;
+  z-index:100;
+  margin-bottom: 1em;
+}
+
+.azul {
+  color: blue;
+}
+
+.verde {
+  color: green;
+}
+
+.rojo {
+  color: red;
+}
+
+.morado {
+  color: purple;
+}
+
+.rosado {
+  color: pink;
+}
+
+.anaranjado {
+  color: orange;
+}
+
+.marron {
+  color: brown;
 }

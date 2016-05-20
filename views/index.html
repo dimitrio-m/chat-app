@@ -3,14 +3,60 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/main.css" >
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/components/material-design-lite/material.min.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Aplicación de Chat en Socket.IO</title>
 
   </head>
 <body>
+  <!-- The drawer is always open in large screens. The header is always shown,
+    even in small screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+              mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                    mdl-textfield--floating-label mdl-textfield--align-right">
+          <label class="mdl-button mdl-js-button mdl-button--icon"
+                 for="fixed-header-drawer-exp">
+            <i class="material-icons">search</i>
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" name="sample"
+                   id="fixed-header-drawer-exp">
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title" id="usuario">Usuario</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content" id="content" style="max-height: 80%">
+      <div class="page-content"> <ul class="" id="messages"></ul> </div>
+    </main>
+    <div class="Form">
+      <form action="">
+        <div class="mdl-textfield mdl-js-textfield" style="margin-left: 2em; width: 79%;">
+          <input class="mdl-textfield__input" type="text" id="m" style="width: 93%;" autocomplete="off">
+          <label class="mdl-textfield__label" for="m" style="width: 93%;"> Mensaje...</label>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="right: 0; bottom: 0;">
+            <i class="material-icons">send</i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 
+<!--
     <div class="container">
       <div class="panel panel-default">
         <div class="panel-body">
@@ -19,16 +65,16 @@
       </div>
 
       <form class="form-inline" action="">
-        <div class="form-group" style="width:100%; margin-bottom: 1em;">
+        <div class="form-group" style="width:100%; margin-bottom: 1em">
           <input class="form-control" type="text" id="m" autocomplete="off" placeholder="Message" style="width:94.5%"/>
           <button class="btn btn-info">Send</button>
         </div>
       </form>
     </div>
-
+  -->
     <script src="/socket.io/socket.io.js" charset="utf-8"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="/components/jquery/dist/jquery.min.js"></script>
+    <script src="/components/material-design-lite/material.min.js"></script>
     <script src="/js/main.js" charset="utf-8"></script>
   </body>
 </html>
